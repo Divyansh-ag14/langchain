@@ -2,6 +2,7 @@ LangChain is a framework for developing applications powered by language models.
 
 Data-aware: connect a language model to other sources of data<br>
 Agentic: allow a language model to interact with its environment<br>
+
 The main value props of LangChain are:
 
 Components: abstractions for working with language models, along with a collection of implementations for each abstraction. Components are modular and easy-to-use, whether you are using the rest of the LangChain framework or not<br>
