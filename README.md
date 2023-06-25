@@ -1,4 +1,4 @@
-LangChain is a framework for developing applications powered by language models. It enables applications that are:
+LangChain is a framework for developing applications powered by language models. It enables applications that are:<br>
 
 Data-aware: connect a language model to other sources of data
 Agentic: allow a language model to interact with its environment
