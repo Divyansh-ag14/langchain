@@ -24,6 +24,7 @@ def main():
     reasons = st.text_input("State some reasons (sickness, personal work, etc):")
     recipeints = st.text_input("Who is the email for?:")
     
+    # Define the email template using PromptTemplate from the langchain module
     email_template = PromptTemplate(
         input_variables = ["topic", "reasons", "recipients", "name"],
         
