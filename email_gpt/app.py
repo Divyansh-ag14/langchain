@@ -37,6 +37,8 @@ def main():
     
       # Create an instance of the OpenAI language model
     llm = OpenAI(temperature=0.5)
+    
+    # Create a chain using the language model and the email template
     email_chain = LLMChain(llm=llm, prompt=email_template)
     
     if name and topic and reasons and recipeints and openai.api_key:
