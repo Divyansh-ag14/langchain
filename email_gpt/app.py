@@ -35,6 +35,7 @@ def main():
             """
     )
     
+      # Create an instance of the OpenAI language model
     llm = OpenAI(temperature=0.5)
     email_chain = LLMChain(llm=llm, prompt=email_template)
     
