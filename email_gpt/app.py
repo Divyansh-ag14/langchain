@@ -43,6 +43,8 @@ def main():
     
     # Check if all the required inputs and the OpenAI API key are provided
     if name and topic and reasons and recipeints and openai.api_key:
+        
+        # Print the inputs for debugging purposes
         print("name", name)
         print("topic", topic)
         print("reasons", reasons)   
