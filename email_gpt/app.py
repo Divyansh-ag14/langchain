@@ -18,7 +18,7 @@ def main():
      # Set the title of the Streamlit application
     st.title("Email GPT Creator") 
     
-    
+     # Prompt the user to input their name, topic, reasons, and recipients for the email
     name = st.text_input("Enter your name:")
     topic = st.text_input("Enter topic (leave, wfh, etc):")
     reasons = st.text_input("State some reasons (sickness, personal work, etc):")
