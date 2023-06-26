@@ -28,7 +28,15 @@ def main():
     )
     
     llm = OpenAI(temperature=0.5)
-    email_chain = LLMChain(llm=llm, prompt=email_template) 
+    email_chain = LLMChain(llm=llm, prompt=email_template)
+    
+    if name and topic and reasons and recipeints and openai.api_key:
+        print("name", name)
+        print("topic", topic)
+        print("reasons", reasons)   
+        print("recipeints", recipeints)
+        response = email_chain.run(topic=topic, reasons=reasons, recipients=recipeints, name=name)
+        st.write(response) 
     
 if __name__ == "__main__":  
     main()
