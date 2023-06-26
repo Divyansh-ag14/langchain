@@ -9,6 +9,8 @@ from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables from a .env file
 _ = load_dotenv(find_dotenv())
+
+# Set the OpenAI API key from the environment variable
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 def main():
