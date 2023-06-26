@@ -17,5 +17,15 @@ def main():
     reasons = st.text_input("State some reasons (sickness, personal work, etc):")
     recipeints = st.text_input("Who is the email for?:")
     
+    email_template = PromptTemplate(
+        input_variables = ["topic", "reasons", "recipients", "name"],
+        
+        template = """Write a professional email to {recipients} about {topic} for the following reasons {reasons} \ 
+        Make sure the reasons are clearly stated and the email is professional. \
+        Be to the point and concise. \
+        Be sure to put 'thanks and regards' and mention {name} in the next line below greeting. \
+            """
+    )
+    
 if __name__ == "__main__":  
     main()
