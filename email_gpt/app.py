@@ -14,7 +14,11 @@ _ = load_dotenv(find_dotenv())
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 def main():
-    st.title("Email GPT Creator")
+    
+     # Set the title of the Streamlit application
+    st.title("Email GPT Creator") 
+    
+    
     name = st.text_input("Enter your name:")
     topic = st.text_input("Enter topic (leave, wfh, etc):")
     reasons = st.text_input("State some reasons (sickness, personal work, etc):")
