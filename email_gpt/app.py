@@ -27,5 +27,8 @@ def main():
             """
     )
     
+    llm = OpenAI(temperature=0.5)
+    email_chain = LLMChain(llm=llm, prompt=email_template) 
+    
 if __name__ == "__main__":  
     main()
