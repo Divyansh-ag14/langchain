@@ -41,6 +41,7 @@ def main():
     # Create a chain using the language model and the email template
     email_chain = LLMChain(llm=llm, prompt=email_template)
     
+    # Check if all the required inputs and the OpenAI API key are provided
     if name and topic and reasons and recipeints and openai.api_key:
         print("name", name)
         print("topic", topic)
