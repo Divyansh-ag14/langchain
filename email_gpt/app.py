@@ -49,7 +49,11 @@ def main():
         print("topic", topic)
         print("reasons", reasons)   
         print("recipeints", recipeints)
+        
+         # Generate the email using the email chain and the provided inputs
         response = email_chain.run(topic=topic, reasons=reasons, recipients=recipeints, name=name)
+        
+        # Display the generated email using Streamlit
         st.write(response) 
     
 if __name__ == "__main__":  
