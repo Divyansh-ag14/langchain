@@ -6,6 +6,10 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv())
+openai.api_key = os.environ['OPENAI_API_KEY']
+
 def main():
     st.title("Email GPT Creator")
     name = st.text_input("Enter your name:")
