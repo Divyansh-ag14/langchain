@@ -7,6 +7,8 @@ To run the app, make sure to include the defined dependencies.
 pip install -r requirements.txt
 ```
 
+Make sure to create a .env file in your project directory<br>
+<img src = "./folder_structure.png">
 ### Start the Server
 ```bash
 python run app.py
