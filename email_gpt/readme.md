@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 Make sure to create a .env file in your project directory<br>
 <img src = "./folder_structure.png">
-Inside the file, provide your api key.
+<br>Inside the file, provide your api key.
 ```bash
 OPENAI_API_KEY = your_key
 ```
