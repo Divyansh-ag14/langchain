@@ -7,9 +7,10 @@ To run the app, make sure to include the defined dependencies.
 pip install -r requirements.txt
 ```
 
-### Make sure to create a .env file in your project directory<br>
+### Make sure to create a .env file in your project directory
 <img src = "./folder_structure.png">
-<br>Inside the file, provide your api key.
+
+### Inside the file, provide your api key.
 ```bash
 OPENAI_API_KEY = your_key
 ```
