@@ -1,4 +1,4 @@
-### Simple app that uses llm to generate email
+### Simple app that uses LLM to generate email
 
 ### Installation
 
